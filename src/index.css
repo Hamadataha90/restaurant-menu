@@ -1,0 +1,230 @@
+/* General styling for body */
+body {
+  font-family: 'Roboto', sans-serif; /* Improved font style */
+  background-color: #f4f4f9; /* Light background color */
+  color: #333; /* Darker text color for better contrast */
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1s ease-in; /* Fade-in effect for page load */
+}
+
+/* Fade-in animation for the body */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Improved Navbar styling */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  padding: 10px 20px;
+  animation: slideDown 0.8s ease-out; /* Slide-down animation */
+}
+
+/* Slide-down animation for Navbar */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+}}
+
+.logo {
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Slide-down animation for Navbar */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Enhanced search bar styling */
+.form-control {
+  width: 250px;
+  border-radius: 20px; /* Rounded edges */
+  padding: 5px 15px;
+  transition: width 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.form-control:focus {
+  width: 300px; /* Expand search bar on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Highlight focus */
+}
+
+/* Improved title styling */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700; /* Bolder font */
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeInFromBottom 1s ease-out; /* Fade-in from bottom */
+}
+
+/* Fade-in from bottom animation for titles */
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Adjust the styling for the custom horizontal line */
+.custom-hr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  animation: fadeIn 2s ease-in; /* Fade-in animation */
+}
+
+.custom-hr {
+  border: none;
+  height: 2px;
+  background-color: #007bff; /* Line color */
+  width: 100%; /* Full width for better alignment */
+  max-width: 50%; /* Maximum width to keep it centered and balanced */
+  position: relative;
+  margin: 0 auto; /* Center the line horizontally */
+}
+
+.custom-hr::before {
+  content: "•••"; /* Decorative text or symbols */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
+  font-size: 1.5rem;
+  color: #007bff;
+  background-color: white;
+  padding: 0 10px;
+  animation: bounce 2s infinite; /* Bouncing animation */
+}
+
+/* Bounce animation for decorative symbols */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Bounce up */
+  }
+}
+
+/* Adjust the spacing for menu categories */
+.menu-categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Increase the gap between buttons */
+  margin-top: 20px; /* Add margin to separate from other elements */
+  flex-wrap: wrap; /* Allows buttons to wrap to the next line if needed */
+}
+
+.category-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s ease, transform 0.2s ease; /* Smooth transition */
+  margin: 1px; /* Add margin around each button */
+}
+
+.category-btn:hover {
+  background-color: #00b36e;
+  transform: translateY(-2px); /* Subtle upward movement on hover */
+  animation: pulse 0.5s infinite alternate; /* Pulse animation on hover */
+}
+
+/* Pulse animation for buttons */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Enhanced card design */
+.card {
+  border-radius: 8px; /* Rounded card corners */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  animation: fadeInUp 1.2s ease-out; /* Fade-in upwards effect */
+}
+
+/* Fade-in upwards animation for cards */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Add a larger shadow on hover */
+}
+
+/* Improved container styling */
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  animation: fadeIn 1s ease-in; /* Fade-in effect for container */
+}
